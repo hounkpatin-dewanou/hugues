@@ -1,5 +1,6 @@
 import React from 'react'
 import { portfolio } from '../../data'
+import PortfolioItem from '../../components/PortfolioItem'
 import './portfolio.css'
 
 const Portfolio = () => {
@@ -9,7 +10,7 @@ const Portfolio = () => {
 
       <div className="portfolio__container container grid">
         {portfolio.map((item) => {
-          return <Portfolio key={item.id} {...item} />
+          return <PortfolioItem key={item.id} {...item} />
         })}
       </div>
     </section>

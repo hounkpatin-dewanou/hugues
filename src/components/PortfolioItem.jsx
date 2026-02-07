@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import '../assests/close.svg'
-const PortfolioItem = ({img, title, detailq}) => {
+import Close from '../assets/close.svg'
+
+const PortfolioItem = ({img, title, details}) => {
     const [modal, setModal] = useState(false);
 
     const toogleModal = () => {
@@ -40,7 +41,7 @@ const PortfolioItem = ({img, title, detailq}) => {
                         })}
                     </ul>
 
-                    <img src="{img}" alt="" className='modal__img'/>
+                    <img src={img} alt="" className='modal__img'/>
                 </div>
             </div>
                 )}
