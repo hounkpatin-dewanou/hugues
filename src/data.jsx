@@ -7,14 +7,18 @@ import {
   FaGraduationCap,
   FaCode,
 } from 'react-icons/fa';
-import { FiFileText, FiUser, FiExternalLink } from 'react-icons/fi';
 
-import Work1 from './assets/project-1.jpeg';
-import Work2 from './assets/project-2.jpg';
-import Work3 from './assets/project-3.jpeg';
-import Work4 from './assets/project-4.jpeg';
-import Work5 from './assets/project-5.jpg';
-import Work6 from './assets/project-6.jpg';
+import { FiDownload } from 'react-icons/fi';
+import { FiFileText, FiSmile, FiExternalLink } from 'react-icons/fi';
+
+import Work1 from './assets/projects/project1.png';
+import Work2 from './assets/projects/project2.png';
+import Work3 from './assets/projects/project3.png';
+import Work4 from './assets/projects/project4.png';
+import Work5 from './assets/projects/project5.png';
+import Work6 from './assets/projects/project6.png';
+import Work7 from './assets/projects/project7.png';
+import Work8 from './assets/projects/project8.png';
 
 import Theme1 from './assets/purple.png';
 import Theme2 from './assets/red.png';
@@ -322,27 +326,28 @@ export const portfolio = [
   {
     id: 1,
     img: Work1,
-    title: 'Photo Editing',
+    title: 'AGRICEFORPA-LIGHT',
+    type: 'web',
     details: [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'Photo',
+        desc: 'AGRICEFORPA-LIGHT',
       },
       {
-        icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'Dribble',
+        icon: <FiSmile />,
+        title: 'Description : ',
+        desc: "Site web de présentation de la structure AGRICEFORPA-LIGHT au Bénin sur ses travaux agricoles et d'élevages modernes",
       },
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'Adobe Photoshop',
+        desc: "HTML + CSS + JS + PHP",
       },
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'www.dribble.com',
+        desc: 'https://hugues2024.github.io/AGRICEFORPA-LIGHT/',
       },
     ],
   },
@@ -350,27 +355,28 @@ export const portfolio = [
   {
     id: 2,
     img: Work2,
-    title: 'Website Design',
+    title: 'FBIP Compta – Inter-Foods',
+    type: 'web',
     details: [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'Website',
+        desc: 'FBIP Compta – Inter-Foods',
       },
       {
-        icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'Dribble',
+        icon: <FiSmile />,
+        title: 'Description : ',
+        desc: 'Site web de gestion comptable',
       },
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'React JS',
+        desc: "Laravel",
       },
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'www.dribble.com',
+        desc: 'https://fbipcompta.inter-foods.com/site/public/',
       },
     ],
   },
@@ -378,27 +384,28 @@ export const portfolio = [
   {
     id: 3,
     img: Work3,
-    title: 'Video Editing',
+    title: 'CGS Sécurité',
+    type: 'web',
     details: [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'Video',
+        desc: 'CGS Sécurité',
       },
       {
-        icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'Dribble',
+        icon: <FiSmile />,
+        title: 'Description : ',
+        desc: 'Site web professionnel développé avec Laravel',
       },
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'Adobe Premium',
+        desc: "Laravel",
       },
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'www.dribble.com',
+        desc: 'https://cgspsecurite.com/',
       },
     ],
   },
@@ -406,27 +413,28 @@ export const portfolio = [
   {
     id: 4,
     img: Work4,
-    title: 'Video Editing',
+    title: 'FORD HIGH TECH (FHT)',
+    type: 'web',
     details: [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'Video',
+        desc: 'FORD HIGH TECH (FHT)',
       },
       {
-        icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'Dribble',
+        icon: <FiSmile />,
+        title: 'Description : ',
+        desc: 'Site institutionnel et technique (informatique & électronique)',
       },
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'Adobe Premium',
+        desc: "Laravel",
       },
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'www.dribble.com',
+        desc: 'https://outilsco.com/fht/public',
       },
     ],
   },
@@ -434,23 +442,28 @@ export const portfolio = [
   {
     id: 5,
     img: Work5,
-    title: 'Landing Page',
+    title: 'EasyTests',
+    type: 'web',
     details: [
       {
+        icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'Website',
+        desc: 'EasyTests',
       },
       {
-        title: 'Client : ',
-        desc: 'Dribble',
+        icon: <FiSmile />,
+        title: 'Description : ',
+        desc: 'Plateforme web de gestion et de passation de tests',
       },
       {
+        icon: <FaCode />,
         title: 'Language : ',
-        desc: 'React JS, Node JS',
+        desc: "PHP",
       },
       {
+        icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'www.dribble.com',
+        desc: 'https://easytests.free.nf',
       },
     ],
   },
@@ -458,90 +471,150 @@ export const portfolio = [
   {
     id: 6,
     img: Work6,
-    title: 'Photo Editing',
+    title: 'TodoWork',
+    type: 'mobile',
     details: [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'Photo',
+        desc: 'TodoWork',
       },
       {
-        icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'Dribble',
+        icon: <FiSmile />,
+        title: 'Description : ',
+        desc: "Application mobile de planifications des tâches et d'agendas",
       },
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'Adobe Photoshop',
+        desc: "Flutter + Firebase",
       },
       {
-        icon: <FiExternalLink />,
+        icon: <FiDownload />,
         title: 'Preview : ',
-        desc: 'www.dibble.com',
+        desc: 'https://drive.google.com/file/d/1z6gnUet6lxQUYzeILSHeaOPPk62e53cs/view?usp=sharing',
       },
     ],
-  },
-];
-
-export const themes = [
-  {
-    id: 1,
-    img: Theme1,
-    color: 'hsl(252, 35%, 51%)',
-  },
-
-  {
-    id: 2,
-    img: Theme2,
-    color: 'hsl(4, 93%, 54%)',
-  },
-
-  {
-    id: 3,
-    img: Theme3,
-    color: 'hsl(271, 76%, 53%)',
-  },
-
-  {
-    id: 4,
-    img: Theme4,
-    color: 'hsl(225, 73%, 57%)',
-  },
-
-  {
-    id: 5,
-    img: Theme5,
-    color: 'hsl(43, 74%, 49%)',
-  },
-
-  {
-    id: 6,
-    img: Theme6,
-    color: 'hsl(339, 81%, 66%)',
   },
 
   {
     id: 7,
-    img: Theme7,
-    color: 'hsl(80, 61%, 50%)',
+    img: Work7,
+    title: 'Culture-Bénin',
+    type: 'web',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Project : ',
+        desc: 'Culture-Bénin',
+      },
+      {
+        icon: <FiSmile />,
+        title: 'Description : ',
+        desc: 'Plateforme web de valorisation de la culture béninoise',
+      },
+      {
+        icon: <FaCode />,
+        title: 'Language : ',
+        desc: "Laravel",
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Preview : ',
+        desc: 'https://easytests.free.nf',
+      },
+    ],
   },
 
   {
     id: 8,
-    img: Theme8,
-    color: 'hsl(19, 96%, 52%)',
+    img: Work8,
+    title: 'Hugues HOUNKPATIN',
+    type: 'web',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Project : ',
+        desc: 'Hugues HOUNKPATIN',
+      },
+      {
+        icon: <FiSmile />,
+        title: 'Description : ',
+        desc: 'Site web de Hugues HOUNKPATIN',
+      },
+      {
+        icon: <FaCode />,
+        title: 'Language : ',
+        desc: "Laravel",
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Preview : ',
+        desc: 'https://hugues2024.github.io/hugues/',
+      },
+    ],
   },
 
-  {
-    id: 9,
-    img: Theme9,
-    color: 'hsl(88, 65%, 43%)',
-  },
-
-  {
-    id: 10,
-    img: Theme10,
-    color: 'hsl(42, 100%, 50%)',
-  },
 ];
+
+// export const themes = [
+//   {
+//     id: 1,
+//     img: Theme1,
+//     color: 'hsl(252, 35%, 51%)',
+//   },
+
+//   {
+//     id: 2,
+//     img: Theme2,
+//     color: 'hsl(4, 93%, 54%)',
+//   },
+
+//   {
+//     id: 3,
+//     img: Theme3,
+//     color: 'hsl(271, 76%, 53%)',
+//   },
+
+//   {
+//     id: 4,
+//     img: Theme4,
+//     color: 'hsl(225, 73%, 57%)',
+//   },
+
+//   {
+//     id: 5,
+//     img: Theme5,
+//     color: 'hsl(43, 74%, 49%)',
+//   },
+
+//   {
+//     id: 6,
+//     img: Theme6,
+//     color: 'hsl(339, 81%, 66%)',
+//   },
+
+//   {
+//     id: 7,
+//     img: Theme7,
+//     color: 'hsl(80, 61%, 50%)',
+//   },
+
+//   {
+//     id: 8,
+//     img: Theme8,
+//     color: 'hsl(19, 96%, 52%)',
+//   },
+
+//   {
+//     id: 9,
+//     img: Theme9,
+//     color: 'hsl(88, 65%, 43%)',
+//   },
+
+//   {
+//     id: 10,
+//     img: Theme10,
+//     color: 'hsl(42, 100%, 50%)',
+//   },
+// ];

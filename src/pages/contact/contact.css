@@ -92,10 +92,80 @@
 
 .button {
   cursor: pointer;
+  width: 100%;
 }
 
 .contact__button-icon {
     font-size: var(--h3-font-size);
     line-height: 64px;
     cursor: pointer;
+}
+
+/* ================== MEDIA QUERIES (RESPONSIVE CONTACT) ================== */
+
+/* Pour les écrans moyens (Tablettes - max 1024px) */
+@media screen and (max-width: 1024px) {
+  .contact__container {
+    grid-template-columns: 1fr; /* On empile les infos et le formulaire */
+    row-gap: 3rem;
+    padding-inline: 2rem; /* Marge interne pour décoller du bord */
+  }
+
+  .form__input-group {
+    grid-template-columns: 1fr 1fr; /* On passe à 2 colonnes pour les inputs */
+  }
+}
+
+/* Pour les mobiles (max 768px) */
+@media screen and (max-width: 768px) {
+  .contact__container {
+    padding-inline: 1.5rem; /* Marges latérales propres sur mobile */
+  }
+
+  .form__input-group {
+    grid-template-columns: 1fr; /* Un seul input par ligne */
+    row-gap: 0; /* Les marges sont déjà gérées par form__input-div */
+  }
+
+  .contact__title {
+    text-align: center;
+  }
+
+  .contact__description {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .contact__info {
+    margin-bottom: 2.5rem;
+  }
+
+  .contact__socials {
+    justify-content: center; /* Centre les icônes réseaux sociaux */
+  }
+
+  .info__item {
+    flex-direction: column; /* Icône au-dessus du texte pour un look moderne */
+    text-align: center;
+    row-gap: 0.5rem;
+  }
+
+  .contact__button-icon {
+    line-height: 56px; /* Ajustement pour le bouton sur mobile */
+  }
+}
+
+/* Pour les petits mobiles (max 450px) */
+@media screen and (max-width: 450px) {
+  .contact__container {
+    padding-inline: 1rem;
+  }
+
+  .info__desc a {
+    font-size: var(--smaller-font-size); /* Évite que l'email ne déborde */
+  }
+
+  .form__control {
+    padding: 10px 20px;
+  }
 }

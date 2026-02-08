@@ -167,3 +167,64 @@
   font-size: var(--smaller-font-size);
   line-height: 1.6;
 }
+
+
+/* ================== MEDIA QUERIES (RESPONSIVE) ================== */
+
+/* Pour les tablettes et écrans moyens */
+@media screen and (max-width: 1024px) {
+  .about__container,
+  .resume__container {
+    grid-template-columns: 1fr; /* On empile les infos perso sur les stats */
+    row-gap: 50px;
+  }
+
+  .skills__container {
+    grid-template-columns: repeat(3, 1fr); /* 3 cercles de compétences au lieu de 4 */
+  }
+}
+
+/* Pour les mobiles */
+@media screen and (max-width: 768px) {
+  .info__list {
+    grid-template-columns: 1fr; /* Les infos comme "Age", "Email" passent sur une ligne */
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr); /* On garde 2 stats par ligne */
+    gap: 20px;
+  }
+
+  .skills__container {
+    grid-template-columns: repeat(2, 1fr); /* 2 cercles par ligne sur mobile */
+  }
+
+  .separator {
+    margin: 40px auto 30px; /* On réduit les grands espaces */
+  }
+}
+
+/* Pour les petits mobiles (moins de 450px) */
+@media screen and (max-width: 450px) {
+  .stats {
+    grid-template-columns: 1fr; /* Une seule stat par ligne */
+  }
+
+  .skills__container {
+    grid-template-columns: 1fr; /* Un seul cercle de skill par ligne */
+  }
+
+  .resume__subtitle {
+    font-size: var(--normal-font-size);
+  }
+
+  .about__info .section__subtitle {
+    text-align: center;
+  }
+
+  .about__info .button {
+    margin: 0 auto;
+    display: flex;
+    width: max-content;
+  }
+}

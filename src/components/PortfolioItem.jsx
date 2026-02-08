@@ -34,7 +34,15 @@ const PortfolioItem = ({img, title, details}) => {
 
                                     <div>
                                         <span className="item__title">{title}</span>
-                                        <span className="item__details">{desc}</span>
+                                        
+                                        {/* On vérifie si le titre commence par "Preview" */}
+                                        {title.startsWith("Preview") ? (
+                                            <a href={desc} target="_blank" rel="noreferrer">
+                                                <span className="item__details">{desc}</span>
+                                            </a>
+                                        ) : (
+                                            <span className="item__details">{desc}</span>
+                                        )}
                                     </div>
                                 </li>
                             )
@@ -45,7 +53,7 @@ const PortfolioItem = ({img, title, details}) => {
                 </div>
             </div>
                 )}
-            </div>
+    </div>
   )
 }
 

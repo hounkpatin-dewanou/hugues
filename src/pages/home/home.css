@@ -56,3 +56,64 @@
     margin-block: 16px 32px;
 }
 
+
+/* ================== MEDIA QUERIES ================== */
+
+/* Pour les grands écrans (Desktops) */
+@media screen and (max-width: 1024px) {
+    .home {
+        grid-template-columns: 1fr; /* On passe sur une seule colonne */
+        height: auto;
+        padding: 80px 20px;
+        text-align: center; /* Centre le texte pour tablette/mobile */
+    }
+
+    .home__title {
+        padding-left: 0; /* On retire le padding pour le centrage */
+    }
+
+    .home__title::before {
+        display: none; /* On cache la barre latérale sur mobile pour plus de clarté */
+    }
+}
+
+/* Pour les tablettes et mobiles */
+@media screen and (max-width: 768px) {
+    .home__img {
+        width: 300px; /* Réduction de la taille de l'image */
+        height: 300px;
+        margin-bottom: 2rem;
+    }
+
+    .home__img:hover {
+        width: 305px;
+        height: 305px;
+    }
+
+    .home__title {
+        font-size: var(--h2-font-size); /* Utilisation d'une taille de police plus petite */
+    }
+
+    .home__description {
+        font-size: var(--small-font-size);
+        line-height: 1.8;
+        margin-block: 12px 24px;
+    }
+}
+
+/* Pour les petits mobiles (Largeur < 450px) */
+@media screen and (max-width: 450px) {
+    .home__img {
+        width: 200px; /* Image encore plus petite pour les petits écrans */
+        height: 200px;
+    }
+
+    .home__img:hover {
+        width: 205px;
+        height: 205px;
+    }
+    
+    .home__title {
+        font-size: 1.5rem;
+    }
+}
