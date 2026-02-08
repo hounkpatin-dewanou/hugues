@@ -12,6 +12,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "html-react-parser": "^5.2.15",
     "react": "^19.2.0",
     "react-circular-progressbar": "^2.2.0",
