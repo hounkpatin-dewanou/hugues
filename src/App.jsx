@@ -9,7 +9,7 @@ import Contact from './pages/contact/Contact';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/hugues">
       <Navbar/>
       <Routes>
         <Route index element={<Home />}/>
