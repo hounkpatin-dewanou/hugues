@@ -107,7 +107,7 @@ export const personalInfo = [
   {
     id: 8,
     title: 'Email : ',
-    description: 'hounkpatindewanouhuguesmarie@gmail.com',
+    description: 'hounkpatindewanou@gmail.com',
   },
 
   {
@@ -198,128 +198,38 @@ export const resume = [
 
 export const skills = [
   {
-    id: 1,
-    title: 'Html',
-    percentage: '90',
+    category: 'Web Development',
+    items: [
+      { id: 7, title: 'React', percentage: '100' },
+      { id: 10, title: 'Laravel', percentage: '100' },
+      { id: 2, title: 'Javascript', percentage: '100' },
+      { id: 5, title: 'Wordpress', percentage: '100' },
+    ],
   },
-
   {
-    id: 2,
-    title: 'Javascript',
-    percentage: '75',
+    category: 'Mobile App',
+    items: [
+      { id: 17, title: 'Flutter', percentage: '100' },
+      { id: 18, title: 'Java', percentage: '100' },
+    ],
   },
-
   {
-    id: 3,
-    title: 'Css',
-    percentage: '75',
+    category: 'System & Security',
+    items: [
+      { id: 9, title: 'Linux', percentage: '100' },
+      { id: 14, title: 'Maintenance', percentage: '100' },
+      { id: 20, title: 'Cryptography', percentage: '100' },
+      { id: 13, title: 'Networks', percentage: '100' },
+    ],
   },
-
   {
-    id: 4,
-    title: 'Php',
-    percentage: '75',
+    category: 'Backend & Data',
+    items: [
+      { id: 8, title: 'Python', percentage: '100' },
+      { id: 4, title: 'Php', percentage: '100' },
+      { id: 19, title: 'Database Admin', percentage: '100' },
+    ],
   },
-
-  {
-    id: 5,
-    title: 'Wordpress',
-    percentage: '75',
-  },
-
-  {
-    id: 6,
-    title: 'Jquery',
-    percentage: '50',
-  },
-
-  {
-    id: 7,
-    title: 'React',
-    percentage: '60',
-  },
-
-  {
-    id: 8,
-    title: 'Python',
-    percentage: '90',
-  },
-
-  {
-    id: 17,
-    title: 'Flutter',
-    percentage: '70',
-  },
-
-  {
-    id: 18,
-    title: 'Java',
-    percentage: '70',
-  },
-
-  {
-    id: 19,
-    title: 'Database Administration',
-    percentage: '70',
-  },
-
-  {
-    id: 20,
-    title: 'Cryptography',
-    percentage: '50',
-  },
-
-  {
-    id: 9,
-    title: 'Linux',
-    percentage: '60',
-  },
-
-  {
-    id: 10,
-    title: 'Laravel',
-    percentage: '60',
-  },
-
-  {
-    id: 11,
-    title: 'MySQL',
-    percentage: '60',
-  },
-
-  {
-    id: 12,
-    title: 'UML',
-    percentage: '60',
-  },
-
-  {
-    id: 13,
-    title: 'Computer networks',
-    percentage: '60',
-  },
-
-  {
-    id: 14,
-    title: 'Maintenance',
-    percentage: '60',
-  },
-
-  {
-    id: 15,
-    title: 'Sale',
-    percentage: '60',
-  },
-
-  {
-    id: 16,
-    title: 'Physical prospecting',
-    percentage: '60',
-  },
-
-
-
-  
 ];
 
 export const portfolio = [

@@ -169,3 +169,17 @@
     padding: 10px 20px;
   }
 }
+
+/* Personnalisation optionnelle de la couleur des toasts */
+
+.Toastify__toast--success {
+    background-color: #27ae60 !important; /* Un vert pro */
+}
+
+.Toastify__toast--error {
+    background-color: #e74c3c !important; /* Un rouge pro */
+}
+
+.Toastify__progress-bar {
+    height: 4px; /* Barre un peu plus épaisse */
+}

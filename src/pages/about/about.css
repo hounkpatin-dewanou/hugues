@@ -228,3 +228,42 @@
     width: max-content;
   }
 }
+
+/* Container global */
+.skills__container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%;
+}
+
+/* Titre de la catégorie (Ligne) */
+.skills__category-title {
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    border-left: 4px solid var(--first-color);
+    padding-left: 15px;
+    letter-spacing: 1px;
+}
+
+/* Grille des cercles sous chaque catégorie */
+.skills__items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 2rem;
+}
+
+/* Ajustements pour mobile */
+@media screen and (max-width: 768px) {
+    .skills__items-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 colonnes sur mobile */
+        gap: 1.5rem;
+    }
+    
+    .skills__category-title {
+        font-size: 1.2rem;
+        text-align: left;
+    }
+}
