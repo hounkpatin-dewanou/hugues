@@ -19,6 +19,7 @@ import Work5 from './assets/projects/project5.png';
 import Work6 from './assets/projects/project6.png';
 import Work7 from './assets/projects/project7.png';
 import Work8 from './assets/projects/project8.png';
+import Work9 from './assets/projects/project9.png';
 
 import Theme1 from './assets/purple.png';
 import Theme2 from './assets/red.png';
@@ -461,6 +462,35 @@ export const portfolio = [
         icon: <FiExternalLink />,
         title: 'Preview : ',
         desc: 'https://hugues2024.github.io/hugues/',
+      },
+    ],
+  },
+
+  {
+    id: 9,
+    img: Work9,
+    title: 'Contact Manager',
+    type: 'web',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Project : ',
+        desc: 'A contact Manager app',
+      },
+      {
+        icon: <FiSmile />,
+        title: 'Description : ',
+        desc: 'Manage your contacts easily and efficiently',
+      },
+      {
+        icon: <FaCode />,
+        title: 'Language : ',
+        desc: "Next.JS + JSON SERVER",
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Preview : ',
+        desc: 'https://dewanou-contact.vercel.app/',
       },
     ],
   },
